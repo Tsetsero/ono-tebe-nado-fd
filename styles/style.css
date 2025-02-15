@@ -55,14 +55,14 @@ body {
   text-align: left;
 }
 
-.header__address {               
+.header__address {            
   justify-self: end;
   max-width: 240px;
   margin-right: 36px;
 }
 
 .contacts {
-  position: relative; 
+  position: relative;
   bottom: 3px;
   text-underline-offset: 3.6px;
 }
@@ -172,7 +172,7 @@ main {
   background: rgba(0, 0, 0, 0.6);
 }
 
-.lots__card-list { 
+.lots__card-list {
   position: relative;
   z-index: 2;
   display: flex;
@@ -322,7 +322,7 @@ footer {
 .footer__social-list {
   display: flex;
   justify-content: flex-end;
-  gap: 48px; 
+  gap: 48px;
   margin-top: -4px;
 } 
 
