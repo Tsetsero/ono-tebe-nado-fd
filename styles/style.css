@@ -1,22 +1,15 @@
 
-
-body {
-  min-height: 3028px;   /*Здравствуй, ревьюер, в моём коде ты найдёшь много непонятных margin которые двигают элименты в разные  стороны, в макете немного другие размер, но накладывая слой макета на проектную работу становиться понятно, что всё очень неодназначно и много погрешностей,надеюсь ты не вернёшь мне работу по этой причине)*/
-}
-
 .header {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr;
   align-items: center;
   min-width: 1100px;
-  min-height: 293px;
-  padding: 0 50px;
+  padding: 91.8px 50px;
 }
 
 .header__menu {
   display: flex;
-  margin-top: -5px;
-}
+  margin-bottom: 5px;}
 
 .header__links-list {
   display: flex;
@@ -30,12 +23,12 @@ body {
   text-underline-offset: 3.6px;
 }
 
-.header__links-list-item_active {
+.header__link_active {
   list-style-type: none;
 }
 
-.header__links-list-item_active a,
-.footer__links-list-item_active a {
+.header__link_active,
+.footer__link_active {
   text-decoration: none;
 }
 
@@ -80,7 +73,7 @@ main {
   background: url('../images/cover.jpg') no-repeat center/cover;
 }
 
-.cover__overlay {
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -97,7 +90,6 @@ main {
   flex-direction: column;
   gap: 16.6px;
   min-width: 1000px;
-  min-height: 385px;
   margin-top: 165px;
   color: #FFFFFF;
   font-weight: 700;
@@ -150,7 +142,6 @@ main {
 .lots {
   position: relative;
   z-index: 2;
-  min-height: 723px;
   margin-top:180px ;
   padding: 0 24px;
 }
@@ -162,20 +153,11 @@ main {
   text-transform: uppercase;
 }
 
-.lots__card-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  min-width: 100%;
-  min-height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-}
-
 .lots__card-list {
   position: relative;
   z-index: 2;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 25px;
   margin-top: 26px;
@@ -195,7 +177,7 @@ main {
   flex-direction: column;
   justify-content: space-between;
   width: 334px;
-  height: 596px;
+  min-height: 596px;
   background-position: center;
   background-size: cover;
 }
@@ -235,7 +217,6 @@ main {
   background-image: url('../images/card-lot-03.jpg');
 }
 
-
 .lots__look-more-link {
   display: flex;
   margin-top: 30px;
@@ -249,13 +230,8 @@ main {
 .about {
   display: grid;
   grid-template-columns: 1.3956fr 3fr;
-  min-height: 595px;
   margin-top:120px;
   padding: 0 24px;
-}
-
-.about__logo {
-  min-height: 596px;
 }
 
 .circle {
@@ -279,6 +255,7 @@ main {
   display: flex;
   flex-direction: column;
   padding-left: 25px;
+  max-width: 713px; /*Устанавливаю максимальную ширину вместо br, как вы указали,но тогда немного едет текст, не понимаю на сонове ваших рекомендаций мне можно установить один br там, где мне это надо или нет, поэтому оставлю так*/
 }
 
 .about__title {
@@ -295,7 +272,7 @@ main {
   line-height: 24px;
 }
 
-.about__text.first {
+.about__text.about__text_intro {
   margin-bottom: 24px;
 }
 
@@ -304,17 +281,15 @@ footer {
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
   align-items: flex-start;
-  min-height: 180px;
   margin-top: 180px;
-  padding: 0 50px;
+  padding: 0px 50px;
 }
 
 .address_footer {
-  margin-top: -1px;
+  margin-top: 4px;
 }
 
 .footer__links-list {
-  margin-top: -4px;
   text-align: center;
   list-style: none;
 }
@@ -323,7 +298,6 @@ footer {
   display: flex;
   justify-content: flex-end;
   gap: 48px;
-  margin-top: -4px;
 } 
 
 .footer__social-list-item {
