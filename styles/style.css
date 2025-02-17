@@ -9,7 +9,8 @@
 
 .header__menu {
   display: flex;
-  margin-bottom: 5px;}
+  margin-bottom: 5px;
+}
 
 .header__links-list {
   display: flex;
@@ -282,7 +283,7 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 180px;
-  padding: 0px 50px;
+  padding: 0px 50px 82.2px;
 }
 
 .address_footer {
